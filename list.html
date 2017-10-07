@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>To Do App</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+        <!-- JQuery -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <!-- javascript -->
     <script src="main.js" type="text/javascript"></script>
 </head>
@@ -23,15 +24,18 @@
         <div id="todo-lists">
             <div class="list">
                 <h2 class="list-title">Groceries</h2>
-                <ol>
-                    <li>Eggs</li>
-                    <li>Milk</li>
-                    <li>Cereal</li>
+                <ol id="grocery-list">
+                    <li> Eggs <button class = "delete-item"
+                    <button class = "delete-item" > X </button>
+                    <li> Milk <button class = "delete-item"
+                    <button class = "delete-item" > X </button>
+                    <li> Cereal <button class = "delete-item"
+                    <button class = "delete-item" > X </button>
                 </ol>
 
             </div>
-            <input type="text"></input>
-            <button onclick="addListItem()">Add Item</button>
+            <input id="new-list-item" type="text"></input>
+            <button id = "add-item" > Add Item </button>
         </div>
     </div>
 </body>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <title>To Do App</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <!-- JQuery -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <!-- javascript -->
     <script src="main.js" type="text/javascript"></script>
 </head>
@@ -23,17 +26,24 @@
         <div id="todo-lists">
             <div class="list">
                 <a href="list.html">Groceries</a>
+                <li><input type = "checkbox" class = "complete-item"
+                <button class = "delete-item" > X </button>
             </div>
 
             <div class="list">
                 <a href="list.html">Homework</a>
+                <li><input type = "checkbox" class = "complete-item"
+                <button class = "delete-item" > X </button>
             </div>
 
             <div class="list">
                 <a href="list.html">Random Errands</a>
+                <li><input type = "checkbox" class = "complete-item"
+                <button class = "delete-item" > X </button>
             </div>
-            <button onclick="addNewList()">Add New List</button>
+            <button id = "add-item" > Add Item </button>
         </div>
+
 
         </div>
     </div>
